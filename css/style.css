@@ -211,6 +211,9 @@
 }
 
 @media (min-width: 768px) {
+  .trending {
+    padding: 80px 72px;
+  }
   .trending .trending_auther {
     width: 48%;
   }
@@ -219,6 +222,9 @@
   }
 }
 @media (min-width: 1024px) {
+  .trending {
+    padding: 80px 110px;
+  }
   .trending .trending_auther {
     width: 31%;
   }

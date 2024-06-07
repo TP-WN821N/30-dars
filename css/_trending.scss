@@ -61,6 +61,7 @@
 }
 @media (min-width: 768px) {
   .trending {
+    padding: 80px 72px;
     .trending_auther{ 
       width: 48%;
       &:nth-child(2) {
@@ -71,6 +72,7 @@
 }
 @media (min-width: 1024px) {
   .trending {
+    padding: 80px 110px;
     .trending_auther{ 
       width: 31%;
       &:nth-child(3) {
