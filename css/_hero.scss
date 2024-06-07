@@ -1,4 +1,5 @@
 .hero {
+  padding: 40px 30px;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -67,9 +68,9 @@
     .hero_kbox {
       display: flex;
       justify-content: space-between;
-      gap: 40px;
+      gap: 16px;
       .hero_kitem {
-        width: 30%;
+        width: 31%;
         font-size: 16px;
         font-weight: 400;
         line-height: 22.4px;
@@ -105,13 +106,24 @@
 }
 @media (min-width: 768px) {
   .hero {
+    align-items: start;
+    padding: 80px 72px;
     display: flex;
     flex-direction: row;
-
+    gap: 30px;
     .hero_text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
       width: 48%;
+      .hero_title {
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 45px;
+      }
       .dn_btnk {
         display: flex;
+        gap: 20px;
         .hero_btn {
           width: 224px;
         }
@@ -120,9 +132,24 @@
     .hero_img {
       width: 48%;
     }
-
+  
   }
   .hero > .hero_btnK{ 
     display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    align-items: start;
+    padding: 80px 110px;
+    .hero_text {
+      .hero_title {
+        font-size: 67px;
+        line-height: 73px;
+      }
+      .hero_desc {
+        line-height: 35px;
+      }
+    }
   }
 }
