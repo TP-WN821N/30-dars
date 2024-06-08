@@ -1,34 +1,50 @@
 @use './hero';
 @use './trending';
+@use './creaters';
+@use './browse';
+@use './miscover';
+@use './magic';
+@use './works';
+@use './weekly';
+@use './footer';
 
 
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Work Sans', sans-serif;
+  color: #fff;
 }
+
 .df {
   display: flex;
   align-items: center;
 }
+
 .dn {
   display: none;
 }
+
 body {
   background-color: #2B2B2B;
 }
+
 .header_nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 30px;
+
   .header_right {
     gap: 10px;
   }
+
   .header_list {
     list-style: none;
+
     .header_link {
       color: #fff;
       text-decoration: none;
@@ -38,6 +54,7 @@ body {
       padding: 12px 20px;
     }
   }
+
   .header_btn {
     font-size: 16px;
     font-weight: 600;
@@ -55,6 +72,7 @@ body {
   .header_right {
     display: flex;
   }
+
   .navMenu {
     display: none;
   }

@@ -1,0 +1,165 @@
+.weekly {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .email {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .weekly_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .weekly_title {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 39.2px;
+    }
+
+    .weekly_desc {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+    }
+  }
+
+  .email_form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .email_input {
+      padding: 12px 20px;
+      background-color: #fff;
+      border: 1px solid #858584;
+      border-radius: 20px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+      width: 100%;
+      outline: none;
+      color: #2b2b2b;
+    }
+
+    .email_btn {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22.4px;
+      padding: 12px 0;
+      background-color: #A259FF;
+      border-radius: 20px;
+      border: none;
+      width: 100%;
+    }
+
+    .email_input::placeholder {
+      color: #000;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .weekly {
+    .email {
+      align-items: end;
+      justify-content: space-between;
+      flex-direction: row;
+
+      .weekly_info {
+        width: 50%;
+      }
+
+      .email_form {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .weekly {
+    margin: 40px 72px;
+    padding: 30px;
+    background-color: #3b3b3b;
+    flex-direction: row;
+    border-radius: 20px;
+
+    >img {
+      width: 50%;
+    }
+
+    .email {
+      width: 50%;
+      flex-direction: column;
+      gap: 20px;
+
+      .email_form,
+      .weekly_info {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  .weekly {
+    margin: 40px 110px;
+    padding: 30px;
+    gap: 80px;
+
+    .weekly_info {
+      .weekly_title {
+        font-size: 38px;
+        line-height: 45.6px;
+      }
+
+      .weekly_desc {
+        font-size: 22px;
+        line-height: 35.2px;
+      }
+    }
+
+    .email {
+      align-items: start;
+
+      .email_form {
+        width: 75%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .weekly {
+    .email {
+      .email_form {
+        position: relative;
+        width: 425px;
+
+        .email_input {
+          padding: 19px 190px 19px 20px;
+        }
+
+        .email_btn {
+          padding: 19px 50px;
+          width: 180px;
+          position: absolute;
+          top: 1px;
+          right: 0;
+        }
+      }
+
+    }
+  }
+
+}
