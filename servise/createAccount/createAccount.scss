@@ -1,0 +1,132 @@
+@use '../../css/style.scss';
+@use '../../css/footer';
+
+
+.createAccount {
+  .account_img {
+    img {
+      width: 100%;
+    }
+  }
+
+  .account_info {
+    padding: 30px 30px 40px 30px;
+
+    .account_info_title {
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 45.6px;
+    }
+
+    .account_info_desc {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+      padding: 20px 0 30px;
+    }
+  }
+
+  .create_Account-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+
+
+    .user_name_box,
+    .user_email_box,
+    .user_password,
+    .confirum_passw {
+      position: relative;
+
+      input {
+        width: 100%;
+        padding: 12px 20px 12px 52px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        color: #000;
+
+        &::placeholder {
+          color: #2B2B2B;
+        }
+
+      }
+
+      img {
+        position: absolute;
+        top: 13px;
+        left: 20px;
+      }
+    }
+
+    .account_btn {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22.4px;
+      padding: 12px 0;
+      background-color: #A259FF;
+      color: #fff;
+      border-radius: 20px;
+      border: none;
+    }
+  }
+}
+
+@media (min-width: 430px) {
+  .createAccount {
+    .create_Account-form {
+      width: 80%;
+    }
+  }
+}
+
+@media (min-width: 530px) {
+  .createAccount {
+    .create_Account-form {
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .createAccount {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+
+    .account_img {
+      width: 50%;
+
+      img {
+        // width: ;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .account_info {
+      width: 48%;
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  .createAccount {
+    gap: 60px;
+
+    .account_ .account_info {
+      padding: 80px 72px 80px 0;
+
+      .create_Account-form {
+        width: 70%;
+      }
+    }
+  }
+}
