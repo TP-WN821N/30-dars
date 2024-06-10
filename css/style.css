@@ -37,6 +37,7 @@
   background-color: #3b3b3b;
 }
 .hero .hero_img .hero_img_text img {
+  max-height: 200px;
   display: block;
 }
 .hero .hero_img .hero_img_text h3 {
@@ -1201,6 +1202,10 @@ body {
   background-color: #2B2B2B;
 }
 
+.header_shodow {
+  box-shadow: 0 6px 6px #444141;
+}
+
 .header_nav {
   display: flex;
   align-items: center;
@@ -1310,13 +1315,13 @@ body {
     width: 40%;
   }
 }
-@media (min-width: 850px) {
+@media (min-width: 920px) {
   .header_nav .toggle_sidebar {
-    width: 30%;
+    width: 20%;
   }
 }
 @media (min-width: 1024px) {
   .header_right {
     display: flex;
   }
-}/*# sourceMappingURL=style.css.map */
+}

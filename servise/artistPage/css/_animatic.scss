@@ -1,0 +1,143 @@
+.animatic {
+  margin-top: 50px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-bottom: 1px solid #3B3B3B;
+
+  .animatic_title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 39.2px;
+  }
+
+  .animatic_box {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+
+  }
+
+  .animatic_btns {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+
+    button {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22.4px;
+      color: #fff;
+      background-color: #A259FF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      border-radius: 20px;
+      padding: 19px 0;
+      width: 100%;
+      border: 2px solid #A259FF;
+    }
+
+    .animatic_btns_follow {
+      background-color: transparent;
+    }
+  }
+
+  .animatic_info {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto;
+
+    &_desc {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: auto;
+
+      span {
+        color: #858584;
+      }
+    }
+
+    &_links {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: auto;
+
+      span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        color: #858584;
+      }
+
+      &_box {
+        display: grid;
+        grid-template-columns: repeat(5, 24px);
+        gap: 10px;
+      }
+    }
+  }
+
+  .animatic_info_kbox {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+  }
+
+  .animatic_info_k {
+
+
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 35.2px;
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .animatic {
+    padding: 40px 72px;
+
+    .animatic_btns {
+      width: 350px;
+      grid-template-columns: auto auto;
+    }
+
+    .animatic_info {
+      max-width: 480px;
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  .animatic {
+    padding: 30px 110px;
+
+    h1 {
+      font-size: 51px;
+      line-height: 56.1px;
+    }
+
+    .animatic_box {
+      grid-template-columns: auto auto;
+      align-items: start;
+      justify-content: space-between;
+
+      .animatic_btns {
+        order: 2;
+      }
+    }
+  }
+}

@@ -37,6 +37,7 @@
   background-color: #3b3b3b;
 }
 .hero .hero_img .hero_img_text img {
+  max-height: 200px;
   display: block;
 }
 .hero .hero_img .hero_img_text h3 {

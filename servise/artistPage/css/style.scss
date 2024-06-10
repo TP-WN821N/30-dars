@@ -1,0 +1,51 @@
+@use '../../../css/style.scss';
+@use '../css/animatic';
+@use './discover';
+
+.header_shodow {
+  box-shadow: 0 6px 6px #444141;
+}
+
+.artistHero {
+  .artistHero_img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    .artist_hero_img {
+      width: 100%;
+      object-fit: cover;
+      height: 250px;
+    }
+
+    .avatar_hero_box {
+      position: absolute;
+      bottom: -25%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .artistHero {
+    .artistHero_img {
+      .avatar_hero_box {
+        padding: 0 72px;
+        justify-content: start;
+      }
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  .artistHero {
+    .artistHero_img {
+      .avatar_hero_box {
+        padding: 0 110px;
+      }
+    }
+  }
+}
