@@ -5,9 +5,9 @@ const myTime = () => {
   let minute = now.getMinutes() < 10 ? '0' + now.getMinutes() : now.getMinutes();
   let seconds = now.getSeconds() < 10 ? '0' + now.getSeconds() : now.getSeconds();
 
-  document.querySelector('.magic_hours').innerHTML = soat;
-  document.querySelector('.magic_min').innerHTML = minute;
-  document.querySelector('.magic_second').innerHTML = seconds;
+  document.querySelectorAll('.magic_hours').innerHTML = soat;
+  document.querySelectorAll('.magic_min').innerHTML = minute;
+  document.querySelectorAll('.magic_second').innerHTML = seconds;
   console.log(`${soat}:${minute}:${seconds}`)
 }
 let interval = setInterval(myTime, 1000);

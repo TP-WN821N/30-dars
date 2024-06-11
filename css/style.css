@@ -1422,6 +1422,118 @@
     padding: 40px 110px;
   }
 }
+.marcetplace_search {
+  padding: 40px 30px;
+}
+.marcetplace_search .marcetplace_title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 39.2px;
+  padding-bottom: 10px;
+}
+.marcetplace_search .marcetplace_desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  padding-bottom: 30px;
+}
+.marcetplace_search .marcetplace_input {
+  width: 100%;
+  position: relative;
+}
+.marcetplace_search .marcetplace_input input {
+  width: 100%;
+  border-radius: 20px;
+  background-color: transparent;
+  padding: 19px 65px 19px 20px;
+  border: 1px solid #3b3b3b;
+  outline: none;
+}
+.marcetplace_search .marcetplace_input #marc_search {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artist_discover .discover_filter {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+@media (min-width: 768px) {
+  .marcetplace_search {
+    padding: 60px 77px;
+  }
+}
+@media (min-width: 1023px) {
+  .marcetplace_search {
+    padding: 80px 110px;
+  }
+}
+.artist_discover .discover_filter {
+  width: 100%;
+  padding: 10px 30px 0 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0;
+}
+.artist_discover .discover_filter .filter_item {
+  width: 100%;
+  padding: 19px 21px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22.4px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #858584;
+  transition: all 0.3s;
+}
+.artist_discover .discover_filter .filter_item span {
+  background-color: #3b3b3b;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13.2px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-left: 12px;
+}
+.artist_discover .discover_filter .filter_item:hover {
+  color: #fff;
+  border-color: #858584;
+}
+.artist_discover .discover_filter .filter_item:hover span {
+  background-color: #858584;
+}
+.artist_discover .miscover_box {
+  padding: 80px 30px;
+  background-color: #3b3b3b;
+}
+.artist_discover .miscover_box .miscover_item_box {
+  background-color: #2b2b2b;
+}
+
+@media (min-width: 633px) {
+  .artist_discover .discover_filter {
+    padding: 10px 78px 0 78px;
+  }
+  .artist_discover .discover_filter span {
+    display: inline;
+  }
+  .artist_discover .miscover_box {
+    padding: 80px 72px;
+  }
+}
+@media (min-width: 1023px) {
+  .artist_discover .miscover_box {
+    padding: 80px 110px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
