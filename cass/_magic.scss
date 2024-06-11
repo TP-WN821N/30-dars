@@ -9,10 +9,12 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+
   .magic_info {
     display: flex;
     flex-direction: column;
     gap: 30px;
+
     .magic_avatar {
       background-color: #3b3b3b;
       display: flex;
@@ -22,15 +24,18 @@
       border-radius: 20px;
       width: 151px;
     }
+
     h1 {
       font-size: 38px;
       font-weight: 600;
       line-height: 45.6px;
     }
-    > .magic_btn {
+
+    >.magic_btn {
       display: none;
     }
   }
+
   .magic_btn {
     background-color: #fff;
     font-size: 16px;
@@ -43,10 +48,12 @@
     border: none;
     width: 198px;
     padding: 19px 50px;
-    & > span{
+
+    &>span {
       color: #2b2b2b;
     }
   }
+
   .magic_time {
     display: flex;
     padding: 30px;
@@ -55,26 +62,35 @@
     align-items: center;
     border-radius: 20px;
     background-color: rgba(59, 59, 59, 0.5);
+
     .magic_time_title {
       font-size: 12px;
       font-weight: 400;
       line-height: 13.2px;
     }
+
     .magic_numbers {
       display: flex;
       gap: 10px;
       align-items: start;
-      .magic_num_hours h1, .magic_num_min h1, .magic_num_second h1 {
+
+      .magic_num_hours h1,
+      .magic_num_min h1,
+      .magic_num_second h1 {
         font-size: 38px;
         font-weight: 700;
         line-height: 45.6px;
         padding-bottom: 5px;
       }
-      .magic_num_hours span, .magic_num_min span, .magic_num_second span {
+
+      .magic_num_hours span,
+      .magic_num_min span,
+      .magic_num_second span {
         font-size: 12px;
         font-weight: 400;
         line-height: 13.2px;
       }
+
       .magic_num {
         font-size: 28px;
         font-weight: 700;
@@ -82,40 +98,49 @@
       }
     }
   }
-  > .magic_btn {
+
+  >.magic_btn {
     width: 100%;
     justify-content: center;
   }
 }
+
 @media (min-width: 560px) {
   .magic {
     display: flex;
     flex-direction: row;
     align-items: end;
+
     .magic_time {
       width: 295px;
     }
+
     .magic_info {
       width: 48%;
+
       .magic_btn {
         display: flex;
       }
     }
-    > .magic_btn {
+
+    >.magic_btn {
       display: none;
     }
   }
 }
+
 @media (min-width: 768px) {
-  .magic{ 
+  .magic {
     padding: 360px 82px 60px;
     justify-content: space-between;
   }
 }
+
 @media (min-width: 1023px) {
   .magic {
     justify-content: space-between;
     padding: 360px 110px 60px;
+
     .magic_info {
       h1 {
         font-size: 51px;

@@ -1,0 +1,309 @@
+@use './magic';
+
+.nft_hero {
+  .nft_hero-img {
+    width: 100%;
+    object-fit: cover;
+    height: 375px;
+  }
+}
+
+.orbitians {
+  padding: 40px 30px;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: space-between;
+
+  .orbitians_title {}
+
+  .orbitien_wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .orbitians_title {
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 39.2px;
+      padding-bottom: 10px;
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+      color: #858584;
+    }
+  }
+
+  .magic_time {
+    max-width: 315px;
+    display: grid;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(59, 59, 59, 0.5);
+
+    .magic_time_title {
+      display: grid;
+      justify-content: start;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 13.2px;
+    }
+
+    .magic_numbers {
+      display: flex;
+      gap: 10px;
+      align-items: start;
+
+      .magic_num_hours h1,
+      .magic_num_min h1,
+      .magic_num_second h1 {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 45.6px;
+        padding-bottom: 5px;
+      }
+
+      .magic_num_hours span,
+      .magic_num_min span,
+      .magic_num_second span {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 13.2px;
+      }
+
+      .magic_num {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 39.2px;
+      }
+    }
+
+    .nft_magic-btn {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22.4px;
+      padding: 19px 0;
+      background-color: #A259FF;
+      border: none;
+      border-radius: 20px;
+      margin-top: 30px;
+    }
+  }
+
+  .orbitians_auther {
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+      color: #858584;
+      padding-bottom: 10px;
+    }
+
+    .orbitians_avatar {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+
+  .orbitians_desc {
+    h3 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+      color: #858584;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+    }
+  }
+
+  .orbitians_link {
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+      color: #858584;
+      padding-bottom: 10px;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+
+  .orbitians_tegs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+      color: #858584;
+      width: fit-content;
+    }
+
+    &_box {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    span {
+      width: fit-content;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22.4px;
+      padding: 12px 30px;
+      background-color: #3b3b3b;
+      text-transform: uppercase;
+      border-radius: 20px;
+    }
+  }
+
+  >.magic_time {
+    display: none;
+  }
+}
+
+.orbitien_artist {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+
+  .orbitien_artist_btn {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 39.2px;
+    }
+
+    button {
+      width: 267px;
+      display: none;
+    }
+  }
+
+  button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: transparent;
+    border: 2px solid #A259FF;
+    padding: 19px 0;
+    border-radius: 20px;
+    width: 100%;
+    justify-content: center;
+    max-width: 315px;
+  }
+}
+
+@media (min-width: 600px) {
+  .orbitians {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    gap: 30px;
+
+    .magic_time {
+      display: none;
+    }
+
+    >.magic_time {
+      display: flex;
+      height: fit-content;
+
+      .nft_magic-btn {
+        width: 100%;
+      }
+    }
+  }
+
+
+}
+
+@media (min-width: 670px) {
+  .orbitien_artist {
+    .orbitien_artist_btn {
+      button {
+        display: flex;
+      }
+    }
+
+    >button {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .nft_hero {
+    .nft_hero-img {
+      height: 420px;
+    }
+  }
+
+  .orbitians {
+    padding: 40px 72px;
+  }
+
+  .orbitien_artist {
+    padding: 40px 72px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .nft_hero {
+    .nft_hero-img {
+      height: 560px;
+    }
+  }
+
+  .orbitians {
+    padding: 40px 110px;
+
+    .orbitians_desc {
+      width: 80%;
+    }
+
+    .orbitians_tegs {
+      .orbitians_tegs_box {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+      }
+    }
+  }
+
+  .orbitien_artist {
+    padding: 40px 110px;
+  }
+}

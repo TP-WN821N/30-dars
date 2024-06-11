@@ -37,7 +37,9 @@ if (window.matchMedia("(max-width: 910px)").matches) {
   menu.classList.add('dn')
   headerRight.classList.remove('dn')
 }
+
 const header = document.querySelector('.header');
+console.log(header)
 window.addEventListener('scroll', () => {
   if (window.scrollY > 10) {
     header.classList.add('header_shodow')
