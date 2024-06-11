@@ -1,8 +1,10 @@
 .artist_discover {
   .discover_filter {
+    width: 100%;
+    padding: 10px 30px 0 30px;
     display: grid;
-    grid-template-columns: auto auto;
-    background-color: red;
+    grid-template-columns: auto;
+    gap: 0;
   }
 }
 
@@ -50,13 +52,17 @@
 }
 
 @media (min-width: 768px) {
-  .marcetplace_search {
+
+  .marcetplace_search,
+  .miscover_box {
     padding: 60px 77px;
   }
 }
 
 @media (min-width: 1023px) {
-  .marcetplace_search {
+
+  .marcetplace_search,
+  .miscover_box {
     padding: 80px 110px;
   }
 }
