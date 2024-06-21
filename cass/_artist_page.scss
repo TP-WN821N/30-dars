@@ -29,8 +29,44 @@
 }
 
 .artist_discover {
-  .discover_filter {
-    grid-template-columns: auto auto !important;
+  .discover_fil {
+    width: 100%;
+    padding: 10px 30px 0 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0;
+
+    .filter_item {
+      width: 100%;
+      padding: 19px 21px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22.4px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid transparent;
+      color: #858584;
+      transition: all 0.3s;
+
+      span {
+        background-color: #3b3b3b;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 13.2px;
+        border-radius: 20px;
+        padding: 5px 10px;
+        margin-left: 12px;
+      }
+
+      &:hover {
+        color: #fff;
+        border-color: #858584;
+
+        span {
+          background-color: #858584;
+        }
+      }
+    }
   }
 }
 
