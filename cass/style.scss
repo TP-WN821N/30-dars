@@ -9,14 +9,17 @@
 @use './footer';
 @use './nft_page';
 @use './marcetplace';
-@use '../servise/artistPage/css/discover';
-@use './marcetplace';
+@use './artist_page';
 
 .artist_discover {
   .discover_filter {
     display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .discover_fil {
+    display: grid;
     grid-template-columns: auto auto;
-    background-color: red;
   }
 }
 

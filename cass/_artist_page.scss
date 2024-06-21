@@ -1,5 +1,4 @@
-@use '../../../css/style.scss';
-@use '../css/animatic';
+@use './animatic';
 @use './discover';
 
 .header_shodow {
@@ -26,6 +25,12 @@
       display: flex;
       justify-content: center;
     }
+  }
+}
+
+.artist_discover {
+  .discover_filter {
+    grid-template-columns: auto auto !important;
   }
 }
 

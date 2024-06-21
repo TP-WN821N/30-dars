@@ -1,9 +1,11 @@
 .artist_discover {
-  .discover_filter {
+
+  .discover_filter,
+  .discover_fil {
     width: 100%;
     padding: 10px 30px 0 30px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     gap: 0;
 
     .filter_item {
